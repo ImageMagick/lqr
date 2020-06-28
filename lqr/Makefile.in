@@ -328,7 +328,6 @@ $(ACLOCAL_M4): @MAINTAINER_MODE_TRUE@ $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 install-lqrLTLIBRARIES: $(lqr_LTLIBRARIES)
 	@$(NORMAL_INSTALL)
-	test -z "$(lqrdir)" || $(mkdir_p) "$(DESTDIR)$(lqrdir)"
 	@list='$(lqr_LTLIBRARIES)'; for p in $$list; do \
 	  if test -f $$p; then \
 	    f=$(am__strip_dir) \
@@ -406,7 +405,6 @@ distclean-libtool:
 uninstall-info-am:
 install-lqr_includeHEADERS: $(lqr_include_HEADERS)
 	@$(NORMAL_INSTALL)
-	test -z "$(lqr_includedir)" || $(mkdir_p) "$(DESTDIR)$(lqr_includedir)"
 	@list='$(lqr_include_HEADERS)'; for p in $$list; do \
 	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
 	  f=$(am__strip_dir) \
@@ -423,7 +421,6 @@ uninstall-lqr_includeHEADERS:
 	done
 install-lqr_include0HEADERS: $(lqr_include0_HEADERS)
 	@$(NORMAL_INSTALL)
-	test -z "$(lqr_include0dir)" || $(mkdir_p) "$(DESTDIR)$(lqr_include0dir)"
 	@list='$(lqr_include0_HEADERS)'; for p in $$list; do \
 	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
 	  f=$(am__strip_dir) \
