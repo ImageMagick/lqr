@@ -11,6 +11,7 @@ LQR_EXPORTS
 lqr
 
 [INCLUDES]
+.
 glib->.
 glib->glib
 
