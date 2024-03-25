@@ -1,0 +1,24 @@
+[DLL]
+
+[LICENSE]
+COPYING.LESSER
+
+[DEFINES]
+LQR_EXPORTS
+
+[DIRECTORIES]
+.
+lqr
+
+[INCLUDES]
+glib->.
+glib->glib
+
+[DEPENDENCIES]
+glib
+
+[CONFIG_DEFINE]
+/*
+  Define to use the Liquid Rescale library
+*/
+#define MAGICKCORE_LQR_DELEGATE
