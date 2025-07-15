@@ -1,4 +1,4 @@
-[DLL]
+[DYNAMIC_LIBRARY]
 
 [LICENSE]
 COPYING.LESSER
@@ -6,19 +6,18 @@ COPYING.LESSER
 [DEFINES]
 LQR_EXPORTS
 
-[DIRECTORIES]
-.
-lqr
+[INCLUDE_ARTIFACTS]
+lqr -> lqr
+lqr\lqr.h -> .
 
-[INCLUDES]
-.
-glib->.
-glib->glib
+[EXCLUDES]
+docs\
+examples\
 
-[DEPENDENCIES]
+[REFERENCES]
 glib
 
-[CONFIG_DEFINE]
+[MAGICK_BASECONFIG_DEFINE]
 /*
   Define to use the Liquid Rescale library
 */
